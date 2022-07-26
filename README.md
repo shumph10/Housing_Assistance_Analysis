@@ -55,6 +55,11 @@ Additionally, this is the department that gathers information to advise changes 
 
 ------------------------------------ 
 
-  
+##**Communication Protocols** 
+
+Primary communication will occur through designated slack channel, additional contacts have been shared for email and text communication if needed. A minimum of two team session will occur per week, with additional sessions as needed for progress completion.  
+
+Pull requests will be reviewed and approved through another team member to ensure best practices and progression. 
+
 
 
