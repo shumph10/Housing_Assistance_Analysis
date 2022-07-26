@@ -23,19 +23,38 @@ These years (2017 & 2022) were selected to examize rent increase in the wake of 
 
 ---------------------------------- 
 
-  
 
 pre vs post pandemic has the strain on governmental programs to cover the gap in rent prices increased as rent prices have potentially increased as well. 
 
-  
 
 ##**Data Sources** 
 
-  
 
 Our data was sourced from the U.S. Department of Housing and Urban Development as it offers the most up to date information on fair market rents, section 8 & 202 housing vouchers, and guidelines for determining amount of assistance and qualification. 
 
 Additionally, this is the department that gathers information to advise changes in payout standards for the Housing Choice Voucher program. As a goverment run department, data from this source should be plentiful and contain minimal bias.  
 
   
+------------------------------------ 
+
+##**Questions We Hope to Answer with the Data** 
+
+- What is considered a fair market price to the HUD? 
+
+   - This will aid in establishing the baseline for HUD requirement for housing assistance voucher amounts, as it is their major contributing factor. 
+
+- What areas have had the most increase in housing voucher assistance payouts and rent between years? 
+
+  - This will establish areas where the strain on governmental assistance programs will be the highest. 
+
+  - Machine learning model will be used to establish clusters based on increase. 
+
+  - Information from these models will be used to draw conclusions about factors having most influence on increase. 
+
+  
+
+------------------------------------ 
+
+  
+
 
