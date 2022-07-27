@@ -9,10 +9,9 @@ The hypothesis is that while incomes have remained similar between years, rent p
 
 The years 2017  and 2022 were selected to examine rent increases in the wake of the influence of the COVID-19 pandemic. As supply-chain issues ensued, many jobs were lost or suspended for extended periods. A temporary halt in residential evictions left landlords attempting to recoup profit, and rent in many areas of the United States has increased; A year before the pandemic (2017) and after the pandemic (2022) were chosen for the best possible representation of changes. While our project will attempt to analyze the changes in governmental housing assistance programs, this is important to note as it significantly influences the rent increase the HUD assistance programs will need to cover. 
 
----------------------------------- 
-
 Pre vs. post-pandemic has the strain on governmental programs to cover the gap in rent prices increased as rent prices have potentially increased as well. 
 
+---------------------------------- 
 
 ## Data Sources
 
@@ -23,7 +22,7 @@ Additionally, this department gathers information to advise changes in payout st
   
 ------------------------------------ 
 
-## Questions We Hope to Answer with the Data
+## Questions
 
 1) What is considered a fair market price to the HUD? 
 
