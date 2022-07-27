@@ -1,0 +1,16 @@
+
+
+import pandas as pd
+
+# read in my files
+data17 = pd.read_csv('../../../Desktop/data17.csv')
+data22 = pd.read_csv('../../../Desktop/data22.csv')
+
+# using merge function by setting how='inner'
+data_17_22 = pd.merge(data17, data22, 
+                   on='_id', 
+                   how='inner')
+
+print(data_17_22)
+
+data_17_22.to_csv(r'/Users/user/Desktop/data_17_22.csv', index=True)
