@@ -1,0 +1,17 @@
+
+
+import pandas as pd
+
+# read in my files
+unadj17 = pd.read_csv('../../../Desktop/unadj_17.csv')
+unadj22 = pd.read_csv('../../../Desktop/unadj_22.csv')
+
+# using merge function by setting how='inner'
+unadj_17_22 = pd.merge(unadj17, unadj22, 
+                   on='fips2010', 
+                   how='inner')
+
+print(unadj_17_22)
+
+unadj_17_22.to_csv(r'/Users/user/Desktop/unadj_17_22.csv', index=False)
+
