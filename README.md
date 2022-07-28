@@ -24,13 +24,12 @@ These years (2017 & 2022) were selected to examize rent increase in the wake of 
 ---------------------------------- 
 
 
-pre vs post pandemic has the strain on governmental programs to cover the gap in rent prices increased as rent prices have potentially increased as well. 
-
-
 ##**Data Sources** 
 
 
 Our data was sourced from the U.S. Department of Housing and Urban Development as it offers the most up to date information on fair market rents, section 8 & 202 housing vouchers, and guidelines for determining amount of assistance and qualification. 
+
+Data was selected from 2017 and 2022 to get the best possible image of rent prices and voucher programs before the pandemic and with the most recent data since.
 
 Additionally, this is the department that gathers information to advise changes in payout standards for the Housing Choice Voucher program. As a goverment run department, data from this source should be plentiful and contain minimal bias.  
 
@@ -61,5 +60,18 @@ Primary communication will occur through designated slack channel, additional co
 
 Pull requests will be reviewed and approved through another team member to ensure best practices and progression. 
 
+-----------------------------------
+
+##**Machine Learning Model**
+
+An unsupervised machine learning model(MLM) must be used as there is no target feature to test a supervised machine learning model against. The unsupervised MLM will utilize a joined dataset comprised of the fair market rent datasets from 2017 and 2022. This will allow calcuation of the rent increases pre- and postpandemic for 0 (studio) to 4 bedroom rentals. Other features in the data set after cleaning will additionally be put through the model to help decipher which features have the most weight in determining the rate of increase. A clustering algorithm will be used, with number of clusters determined by an elbow graph. This graph shows the number of clusters vs inertia of the model, measuring the amount of variation in the data set. The number of clusters will then be chosen where the graph line shifts from primarily vertical to horizontal showing less variation per cluster. A new model will be fit and used to predict which cluster the data points belong to. 
+
+A trial machine learning model was built using the FMR 2022 data set to see how the rent per bedroom and area codes would cluster independently and aid in final MLM design. The data set was preprocessed through removal of rows with exuberant amounts of null values, the number of duplicates were checked, there were none. Features that would not be useful to the MLM were dropped from the dataset, such as the county and area name as they were represented in the corresponding codes. The columns for CBSA sub location codes and county sub codes were additionally dropped as they contained far too many unique categories to be bucketed for the model, and locations were again represented by the state and county codes kept. These state and county codes were then bucketed, with outlier or small groups put into an "other" category. The exact number of values per code to cut the bucketing off at was determined by density plots. Data was then scaled and fit to a Kmeans model with the number of clusters (5) determined by an elbow graph. Predictions of clusters were added to the original cleaned dataframe as "Class", the resulting dataframe and class value counts are as show below. The correlation method was used on the resulting dataset with the method as the Pearson Correlation to test wheter there is a significant relationship between any of the variables. This showed a positive correlation between 2 bedroom rent and class, showing a weak correlation between rent and class assigned. 
+
+This general model style will be implimented for the final dataset and MLM, cleaned in a similar fashion. As the correlation method did not show the state and county codes correlation to class another method may have to be determined to find this information as we are looking for clusters by increase and area to determine potential areas that would need assistance program reworking. 
+
+![practice_mlm_class_results](https://user-images.githubusercontent.com/100040705/181650259-18e3778b-eb00-44d5-a162-3541f41c28a6.png)
+
+![clustered_df_practice_corr_pearson](https://user-images.githubusercontent.com/100040705/181651279-fe3efb5b-b195-4120-83b3-ac858c518158.png)
 
 
