@@ -84,4 +84,14 @@ https://www.huduser.gov/portal/datasets/il.html#2022_data
 Fair Market Rates and Unadjusted Rents:
 https://www.huduser.gov/portal/datasets/fmr.html
 
+### Database Column Names:
+
+#### 17_22_merged
+_id	State_Alpha_x	cbsasub_x	median2017	Metro_Area_Name_x	county_town_name_x	l50_2_x	ELI_2_x	l80_2_x	fmr0	fmr1	fmr2	fmr3	fmr4	State	County_Name_x	state_name_x	metro_x	State_Alpha_y	cbsasub_y	median2022	Metro_Area_Name_y	county_town_name_y	l50_2_y	ELI_2_y	l80_2_y	fmr_0	fmr_1	fmr_2	fmr_3	fmr_4	state	County_Name_y	state_name_y	metro_y
+
+#### unadj_17_22
+stusps_x	fips2010	name	unadj_br0_x	unadj_br1_x	unadj_br2_x	unadj_br3_x	unadj_br4_x	stusps_y	areaname22	unadj_br0_y	unadj_br1_y	unadj_br2_y	unadj_br3_y	unadj_br4_y
+
+### Database Explanation:
+
 Six datasets were utilized to create this database. These datasets were cleaned and joined via excel and Pyton. The Python pandas library was also employed in this process. MongoDb compass was implemented to create both the database titled “17_22” and the collections titled “17_22_merged” and “unadj_17_22”. The Fair Market Rates datasets and the Income limits datasets were joined by year and via a common column: “fips2010”. This was performed to allow JSON files to not have an _id column conflict. Also, the Unadjusted Rents datasets were joined by year.
