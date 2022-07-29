@@ -74,4 +74,14 @@ This general model style will be implimented for the final dataset and MLM, clea
 
 ![clustered_df_practice_corr_pearson](https://user-images.githubusercontent.com/100040705/181651279-fe3efb5b-b195-4120-83b3-ac858c518158.png)
 
+-----------------------------------
 
+##**Database**
+
+The original datasets for this database can be found at the following links via the years tab (2017 and 2022) the Data tab:
+Income limits:
+https://www.huduser.gov/portal/datasets/il.html#2022_data
+Fair Market Rates and Unadjusted Rents:
+https://www.huduser.gov/portal/datasets/fmr.html
+
+Six datasets were utilized to create this database. These datasets were cleaned and joined via excel and Pyton. The Python pandas library was also employed in this process. MongoDb compass was implemented to create both the database titled “17_22” and the collections titled “17_22_merged” and “unadj_17_22”. The Fair Market Rates datasets and the Income limits datasets were joined by year and via a common column: “fips2010”. This was performed to allow JSON files to not have an _id column conflict. Also, the Unadjusted Rents datasets were joined by year.
