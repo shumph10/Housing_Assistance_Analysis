@@ -104,6 +104,17 @@ The neural network model had high accuracy at 86% predictions being correct, but
 
 -----------------------------------
 
+##**Final Dashboard**
+
+
+A final dashboard will be made using a flask application and deployed with Heroku. This will contain multiple routes for information on processing of data, information on our MongoDB database, machine learning segment, and conclusions. We are working on building interactive maps with Pandas and GMaps, with a heatmap of feature increases. These will focus on fair market rate 2 bedrooms and wait times as they are the main deciding factor in housing assistance voucher amounts. The main page will include the purpose of our projects, links to other sections, and our contact information so it is ready for use in our portfolios. A first draft of the website is as follows:
+
+![website_mockup1](https://user-images.githubusercontent.com/100040705/183319066-a916f6b9-9619-4f48-8915-8c078366691c.png)
+
+![website_mockup](https://user-images.githubusercontent.com/100040705/183319071-443b4908-d42b-45ab-b4ce-3846b0f7d209.png)
+
+-----------------------------------
+
 ##**Database**
 
 The original datasets for this database can be found at the following links via the years tab (2017 and 2022) the Data tab:
