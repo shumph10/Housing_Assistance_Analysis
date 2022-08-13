@@ -21,7 +21,6 @@ Our hypothesis is while incomes have remained similar between years, rent prices
 
 These years (2017 & 2022) were selected to examize rent increase in the wake of the influence of the COVID-19 pandemic. As supply-chain issues insued, many jobs were lost or suspended for long periods of time, and temporary halt in residential evictions left landlords attempting to recoupe profit, rent in many areas of the United States have increased. A year before the onslought of the pandemic (2017) and the most recent data as the pandemics effect lessen (2022) were chosen for the best possible representation of changes. While our project will attempt to analyze the changes in governmental housing assistance programs, this is important to note as it is a major influence in the rent increase the HUD assistance programs will need to cover.  
 
-  
 
 ---------------------------------- 
 
@@ -52,15 +51,6 @@ Additionally, this is the department that gathers information to advise changes 
 
   - Information from these models will be used to draw conclusions about factors having most influence on increase. 
 
-  
-
------------------------------------- 
-
-##**Communication Protocols** 
-
-Primary communication will occur through designated slack channel, additional contacts have been shared for email and text communication if needed. A minimum of two team session will occur per week, with additional sessions as needed for progress completion.  
-
-Pull requests will be reviewed and approved through another team member to ensure best practices and progression. 
 
 -----------------------------------
 
