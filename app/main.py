@@ -1,10 +1,14 @@
 #import dependencies
 from flask import Flask, render_template, redirect, url_for
-# from flask_pymongo import PyMongo
-# import scraping
-# import random
-# import requests
-# from config import MONGO_URL
+# import pymongo
+# from pymongo import MongoClient
+# # from config import *
+# import os
+
+# app.config["MONGO_URL"] = os.environ.get("MONGO_URL")
+# mongo = PyMongo(app)
+
+# collection.find({"state"})
 
 
 #set up flask
@@ -22,6 +26,14 @@ def home():
 @app.route('/results')
 def results():
     return render_template('results.html')
+
+@app.route('/data')
+def data(state: dict) -> dict:
+    info = mongo.db.Sec8_county_merged
+
+    info.find({state})
+    
+    return render_template('table.html', info=info)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8001)
