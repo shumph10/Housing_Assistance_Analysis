@@ -1,1 +1,1 @@
-MONGO_URL = "mongodb+srv://hillinhank:groupblue@cluster0.ffmxu49.mongodb.net/test"
+MONGO_URL = "mongodb+srv://hillinhank:groupblue@cluster0.ffmxu49.mongodb.net/test?retrywrites=true&w=majority"
